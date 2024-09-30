@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.editor-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.toolbar button,
+.toolbar input[type="color"],
+.toolbar input[type="range"] {
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.toolbar button {
+    background-color: #7e57c2;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.toolbar button:hover {
+    background-color: #6a1b9a;
+}
+
+.bold { background-color: #f44336; }
+.italic { background-color: #2196f3; }
+.underline { background-color: #4caf50; }
+
+.toolbar input[type="color"] {
+    width: 50px;
+    height: 40px;
+    border: none;
+}
+
+.toolbar input[type="range"] {
+    width: 100px;
+}
+
+.text-area {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action-buttons button:hover {
+    background-color: #f57c00;
+}
+
+@media (max-width: 600px) {
+    .editor-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toolbar button,
+    .toolbar input[type="color"],
+    .toolbar input[type="range"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .text-area {
+        height: 250px;
+    }
