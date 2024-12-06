@@ -19,7 +19,7 @@ function addText() {
     }
 }
 
-// Remove all text from the editor
+// Remove all text from the editor//
 function removeText() {
     const textArea = document.querySelector(".text-area");
     textArea.innerHTML = "";
