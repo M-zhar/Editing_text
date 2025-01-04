@@ -1,1 +1,1 @@
-This is text editor website with simple ui component.
+This is text editor website with simple ui component..
